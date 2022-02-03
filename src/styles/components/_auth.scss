@@ -1,0 +1,118 @@
+.auth__main {
+    align-items: center;
+    background-color: lighten($primary, 12);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    width: 100vw;
+}
+
+.auth__box-container {
+    background-color: white;
+    box-shadow: 0 5px $dark-primary;
+    border-radius: 10px;
+    padding: 3.34em;
+    width: 450px;
+}
+
+.auth__title {
+    color: $dark-primary;
+    font-family: $font-stack;
+    font-weight: 500;
+    font-size: 2.3rem;
+    margin: 0 0 0.85em 0;
+}
+
+.auth__errors {
+    color: red;
+    display: flex;
+    font-size: 0.9em;
+    margin: 0 0 1.3rem 0;
+    text-align: justify;
+}
+
+.auth__input {
+    color: $dark-grey;
+    border: none;
+    border-bottom: 2px solid $light-grey;
+    margin-bottom: 1.2rem;
+    font-weight: 400;
+    font-size: 1.12em;
+    line-height: 1.1rem;
+    width: 100%;
+
+    transition: border-bottom .15s ease;
+
+    &:focus {
+        outline: unset;
+        border-bottom: 2px solid darken($color: $primary, $amount: 70);
+        color: darken( $dark-grey, 35 );
+    }
+}
+
+.auth__button {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.auth__social-networks {
+    font-weight: 500;
+    margin: 0;
+}
+
+.auth__google-btn {
+    cursor: pointer;
+    margin: 9px 0;
+    border-radius: 2px;
+    background-color: $google-blue;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+    height: 2.4em;
+    width: 100%;
+
+    transition: box-shadow .3s ease;
+
+    &[disabled] {
+        background-color: fade-in($color: $dark-secondary, $amount: .32);
+        transition: background-color .3s ease-in-out;
+
+        .auth__google-btn-text {
+            color: $dark-grey;
+            font-weight: 400;
+        }
+    }
+
+    .auth__google-icon-wrapper {
+        position: absolute;
+        margin-top: 5px;
+        margin-left: 4px;
+        width: 1.9em;
+        height: 1.8em;
+        border-radius: 2px;
+        background-color: #fff;
+    }
+
+    .auth__google-icon {
+        position: absolute;
+        margin-top: 8px;
+        margin-left: 8px;
+        width: 1em;
+        height: 0.9em;
+    }
+
+    .auth__google-btn-text {
+        color: #fff;
+        float: right;
+        font-weight: 300;
+        margin: 9px 50px 0 0;
+        letter-spacing: 0.2px;
+    }
+
+    &:hover {
+        box-shadow: 0 0 14px $google-blue;
+    }
+
+    &:active {
+        background-color: darken($color: $google-blue, $amount: 10);
+    }
+}

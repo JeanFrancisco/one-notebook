@@ -1,0 +1,111 @@
+.sidebar {
+    background-color: darken($color: $dark-grey, $amount: 10);
+    display: flex;
+    flex-direction: column;
+    float: left;
+    height: 100vh;
+    width: 20%;
+}
+
+.sidebar__user-info {
+    color: #fff;
+    background-image: linear-gradient($dark-grey 70%, darken($grey, 10));
+    display: flex;
+    flex: 0 auto;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    height: 70px;
+
+    &:hover {
+        background-image: linear-gradient( lighten($dark-grey, 3) 1%, darken($dark-grey, 3) 70%, darken($grey, 5) );
+    }
+
+    .sidebar__user-icon {
+        align-self: center;
+        margin: 7px 7px 0 0;
+        width: 1.4em;
+        height: 1.1em;
+    }
+}
+
+.sidebar__user-name {
+    color: $secondary;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.sidebar__user-loggout {
+    color: $light-grey;
+    background-color: transparent;
+    border: 1px solid $light-grey;
+}
+
+.sidebar__new-entry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    min-height: 150px;
+    width: 70%;
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        height: 80%;
+        width: 100%;
+        color: darken($dark-secondary, 8);
+        transition: color .3s ease, background-color .3s ease-in-out;
+
+        &:hover {
+            color: #fff;
+            background-color: darken($dark-secondary, 5);
+            box-shadow: 0 0 8px darken($dark-grey, 1);
+
+            .fa-plus {
+                color: lighten(darkorange, 7);
+                transition: color .3s ease;
+            }
+        }
+    
+        .sidebar__new-entry-icon {
+            margin-left: 55px;
+        }
+
+        .fa-plus {
+            color: darkorange;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .sidebar__new-entry {
+        .btn {
+            .sidebar__new-entry-icon {
+                font-size: 4em;
+                line-height: 1.4;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .sidebar {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .sidebar {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding-bottom: 18px;
+    }
+}

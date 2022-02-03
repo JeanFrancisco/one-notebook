@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas al componente de <Note />.jsx Debe hacer match con el snapshot por defecto 1`] = `
+<div
+  className="note"
+>
+  <div
+    className="note__appbar"
+  >
+    <span
+      className="note__appbar-date"
+    >
+      28 de agosto de 2020
+    </span>
+    <input
+      id="selector__file-photo"
+      onChange={[Function]}
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+      type="file"
+    />
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+    >
+      <span
+        className="fas fa-cloud-upload-alt fa-sm"
+      >
+         
+      </span>
+        Subir Imagen
+    </button>
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+    >
+      <i
+        className="fas far fa-save fa-sm"
+      />
+        Guardar
+    </button>
+  </div>
+  <form
+    className="note__form"
+  >
+    <input
+      className="note__input-title animate__animated animate__slideInUp animate__slow"
+      name="title"
+      onChange={[Function]}
+      placeholder="Type an awesome title"
+      type="text"
+      value="An Tests Title"
+    />
+    <textarea
+      className="note__textarea animate__animated animate__fadeIn animate__slow"
+      name="body"
+      onChange={[Function]}
+      placeholder="Empty"
+      value="Lorem impsu"
+    />
+  </form>
+  <div
+    className="note__footer"
+  >
+    <img
+      alt="[note-img-preview]"
+      className="note__image-preview animate__animated animate__fadeIn"
+      src="83968430_104662571102161_9176297833785982976_n.jpg"
+    />
+    <button
+      className="btn note__button-delete"
+      onClick={[Function]}
+    >
+      <span
+        className="fas fa-trash-alt fa-sm"
+      />
+         Eliminar Nota
+    </button>
+  </div>
+</div>
+`;

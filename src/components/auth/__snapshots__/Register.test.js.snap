@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente <Register/>.jsx Debe hacer match con el snapshot por defecto 1`] = `
+Array [
+  <h4
+    className="auth__title"
+  >
+    Registrar
+  </h4>,
+  "",
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoComplete="off"
+      className="auth__input"
+      name="username"
+      onChange={[Function]}
+      placeholder="Enter your username"
+      type="text"
+      value="Francisco"
+    />
+    <input
+      autoComplete="off"
+      className="auth__input"
+      name="email"
+      onChange={[Function]}
+      placeholder="Enter your e-mail"
+      type="email"
+      value="username@example.org"
+    />
+    <input
+      className="auth__input"
+      name="password"
+      onChange={[Function]}
+      placeholder="Type your password"
+      type="password"
+      value="122345"
+    />
+    <input
+      className="auth__input"
+      name="confirmpassword"
+      onChange={[Function]}
+      placeholder="Please confirm your password"
+      type="password"
+      value="398174"
+    />
+    <button
+      className="btn btn-primary btn-block auth__button"
+      type="submit"
+    >
+      Registrarme
+    </button>
+  </form>,
+  <a
+    className="link"
+    href="/auth/login"
+    onClick={[Function]}
+  >
+    ¿Ya estás registrado? Inicia Sesión.
+  </a>,
+]
+`;

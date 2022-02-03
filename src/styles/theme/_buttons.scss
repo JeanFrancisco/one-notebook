@@ -1,0 +1,27 @@
+.btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    line-height: 1.13;
+    padding: 0.75em .8em;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.25);
+        transition: background-color .1s ease;
+    }
+
+    &:disabled {
+        color: $dark-grey;
+        background-color: fade-out($color: $dark-secondary, $amount: .32);
+        transition: background-color .3s ease-in-out;
+    }
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.btn-primary {
+    color: white;
+    background-color: $primary;
+}

@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas al componente <Sidebar />.jsx Debe de renderizar el componente haciendo match con el snapshot por defecto. 1`] = `
+<aside
+  className="sidebar"
+>
+  <div
+    className="sidebar__user-info"
+  >
+    <i
+      className="sidebar__user-icon far fa-moon"
+    />
+    <p
+      className="sidebar__user-name"
+    >
+      Jane Doe
+    </p>
+    <button
+      className="btn sidebar__user-loggout"
+      onClick={[Function]}
+    >
+      Logout
+    </button>
+  </div>
+  <div
+    className="sidebar__new-entry"
+  >
+    <button
+      className="btn"
+      onClick={[Function]}
+    >
+      <div
+        className="sidebar__new-entry-icon fa-5x"
+      >
+        <i
+          className="far fa-calendar"
+        />
+        <i
+          className="fas fa-plus"
+          data-fa-transform="shrink-8 left-9 down-5"
+        />
+      </div>
+      <span
+        className="sidebar__new-entry-txt"
+      >
+        New Entry
+      </span>
+    </button>
+  </div>
+  <div
+    className="journal__list"
+  >
+    <div
+      className="journal__list-order-form"
+    >
+      <label
+        className="journal__list-order-title"
+      >
+         Order by: 
+      </label>
+      <input
+        checked={false}
+        id="alphabetic"
+        name="orderBy"
+        onChange={[Function]}
+        type="radio"
+        value="alphabetic"
+      />
+      <label
+        htmlFor="alphabetic"
+      >
+        Alphabetically
+      </label>
+      <input
+        checked={false}
+        id="cronologic"
+        name="orderBy"
+        onChange={[Function]}
+        type="radio"
+        value="cronologic"
+      />
+      <label
+        htmlFor="cronologic"
+      >
+        Cronologically
+      </label>
+      <button
+        className="btn"
+        onClick={[Function]}
+      >
+        <i
+          className="fa fa-sort-amount-up"
+          id="btn-sort-icon"
+        />
+      </button>
+    </div>
+  </div>
+</aside>
+`;

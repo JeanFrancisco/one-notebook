@@ -1,0 +1,22 @@
+.home__main-content {
+    float: right;
+    width: 80%;
+}
+
+@media screen and (max-width: 1280px) {
+    .home__main-content {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .home__main-content {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .home__main-content {
+        width: 100%;
+    }
+}

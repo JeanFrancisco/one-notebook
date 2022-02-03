@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas al componente de <NoteAppBar/>.jsx Debe hacer el match con el snapshot capturado por defecto 1`] = `
+<div
+  className="note__appbar"
+>
+  <span
+    className="note__appbar-date"
+  >
+    28 de agosto de 2020
+  </span>
+  <input
+    id="selector__file-photo"
+    onChange={[Function]}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="file"
+  />
+  <button
+    className="btn btn-primary"
+    onClick={[Function]}
+  >
+    <span
+      className="fas fa-cloud-upload-alt fa-sm"
+    >
+       
+    </span>
+      Subir Imagen
+  </button>
+  <button
+    className="btn btn-primary"
+    onClick={[Function]}
+  >
+    <i
+      className="fas far fa-save fa-sm"
+    />
+      Guardar
+  </button>
+</div>
+`;

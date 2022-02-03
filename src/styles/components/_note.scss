@@ -1,0 +1,132 @@
+.note {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.note__appbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: $primary;
+
+    .btn {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+}
+
+.note__appbar-date {
+    flex: 1 0 auto;
+    color: #fff;
+    align-self: center;
+    margin: 0 20px;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.note__form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.note__input-title, .note__textarea {
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.note__input-title {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.note__textarea {
+    resize: none;
+    font-size: 1.3em;
+    background-color: transparent;
+    flex: 1 0 auto;
+    // z-index: -1;
+}
+
+.note__footer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    background-image: linear-gradient(#ddd 15%, transparent 70%);
+    padding-top: 48px;
+}
+
+.note__image-preview {
+    max-width: 510px;
+    max-height: 390px;
+    margin-left: 30px;
+    margin-bottom: 25px;
+    box-shadow: 10px 8px $dark-grey;
+}
+
+.note__button-delete {
+    color: white;
+    font-size: 1.05rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: lighten(darkred, $amount: 10);
+    box-shadow: 8px 10px $dark-grey;
+    padding: 15px 30px;
+    margin: 10px 30px auto auto;
+    
+    transition: background-color .15s ease;
+    
+    &:hover {
+        background-color: darken(red, $amount: 5);
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .note__button-delete {
+        padding: 10px 15px;
+        border-radius: 7px;
+    }
+
+    .note__image-preview {
+        max-height: 320px;
+        max-width: 330px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .note__button-delete {
+        padding: 12px;
+        height: 45px;
+        width: 45px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .note__appbar {
+        font-size: 0.9rem;
+        .btn {
+            font-size: 1.05rem;
+        }
+    }
+    .note__image-preview {
+        max-width: 200px;
+        max-height: 240px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .note__appbar {
+        .btn {
+            font-size: 1.15rem;
+            padding: 10px;
+            height: 40px;
+            width: 40px;
+            overflow: hidden;
+        }
+    }
+}

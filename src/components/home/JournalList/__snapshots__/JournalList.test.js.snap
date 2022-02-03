@@ -1,0 +1,386 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas al componente de <JournalList/>.jsx Debe hacer match con el snapshot por defecto. 1`] = `
+<div
+  className="journal__list"
+>
+  <div
+    className="journal__list-order-form"
+  >
+    <label
+      className="journal__list-order-title"
+    >
+       Order by: 
+    </label>
+    <input
+      checked={false}
+      id="alphabetic"
+      name="orderBy"
+      onChange={[Function]}
+      type="radio"
+      value="alphabetic"
+    />
+    <label
+      htmlFor="alphabetic"
+    >
+      Alphabetically
+    </label>
+    <input
+      checked={true}
+      id="cronologic"
+      name="orderBy"
+      onChange={[Function]}
+      type="radio"
+      value="cronologic"
+    />
+    <label
+      htmlFor="cronologic"
+    >
+      Cronologically
+    </label>
+    <button
+      className="btn"
+      onClick={[Function]}
+    >
+      <i
+        className="fa fa-sort-amount-down-alt"
+        id="btn-sort-icon"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Pruebas al componente de <JournalList/>.jsx Debe hacer match con el snapshot por defecto. Nótese que el order se establece a desc y el orderby a alphabetic 1`] = `
+<div
+  className="journal__list"
+>
+  <div
+    className="journal__list-order-form"
+  >
+    <label
+      className="journal__list-order-title"
+    >
+       Order by: 
+    </label>
+    <input
+      checked={true}
+      id="alphabetic"
+      name="orderBy"
+      onChange={[Function]}
+      type="radio"
+      value="alphabetic"
+    />
+    <label
+      htmlFor="alphabetic"
+    >
+      Alphabetically
+    </label>
+    <input
+      checked={false}
+      id="cronologic"
+      name="orderBy"
+      onChange={[Function]}
+      type="radio"
+      value="cronologic"
+    />
+    <label
+      htmlFor="cronologic"
+    >
+      Cronologically
+    </label>
+    <button
+      className="btn"
+      onClick={[Function]}
+    >
+      <i
+        className="fa fa-sort-amount-up"
+        id="btn-sort-icon"
+      />
+    </button>
+  </div>
+  <div
+    className="journal__entry animate__animated animate__pulse"
+    onClick={[Function]}
+  >
+    <div
+      className="journal__entry-content"
+    >
+      <h5
+        className="journal__entry-title"
+      >
+        Test title One
+      </h5>
+      <p
+        className="journal__entry-description"
+      >
+        Lorem impsu
+      </p>
+    </div>
+    <label
+      className="journal__entry-date"
+    >
+      Thursday
+      <span
+        className="journal__entry-day"
+      >
+        3rd
+      </span>
+    </label>
+  </div>
+  <div
+    className="journal__entry animate__animated animate__pulse"
+    onClick={[Function]}
+  >
+    <div
+      className="journal__entry-content"
+    >
+      <h5
+        className="journal__entry-title"
+      >
+        Test title Two
+      </h5>
+      <p
+        className="journal__entry-description"
+      >
+        Lorem impsu
+      </p>
+    </div>
+    <label
+      className="journal__entry-date"
+    >
+      Thursday
+      <span
+        className="journal__entry-day"
+      >
+        3rd
+      </span>
+    </label>
+  </div>
+  <div
+    className="journal__entry animate__animated animate__pulse"
+    onClick={[Function]}
+  >
+    <div
+      className="journal__entry-content"
+    >
+      <h5
+        className="journal__entry-title"
+      >
+        Test title Three
+      </h5>
+      <p
+        className="journal__entry-description"
+      >
+        Lorem impsu
+      </p>
+    </div>
+    <label
+      className="journal__entry-date"
+    >
+      Thursday
+      <span
+        className="journal__entry-day"
+      >
+        3rd
+      </span>
+    </label>
+  </div>
+  <div
+    className="journal__entry animate__animated animate__pulse"
+    onClick={[Function]}
+  >
+    <div
+      className="journal__entry-content"
+    >
+      <h5
+        className="journal__entry-title"
+      >
+        Test title Four
+      </h5>
+      <p
+        className="journal__entry-description"
+      >
+        Lorem impsu
+      </p>
+    </div>
+    <label
+      className="journal__entry-date"
+    >
+      Thursday
+      <span
+        className="journal__entry-day"
+      >
+        3rd
+      </span>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Pruebas al componente de <JournalList/>.jsx Debe renderizar tantos componentes <JournalEntry/>, como número de elementos haya en el arreglo de notes 1`] = `
+<div
+  className="journal__list"
+>
+  <div
+    className="journal__list-order-form"
+  >
+    <label
+      className="journal__list-order-title"
+    >
+       Order by: 
+    </label>
+    <input
+      checked={false}
+      id="alphabetic"
+      name="orderBy"
+      onChange={[Function]}
+      type="radio"
+      value="alphabetic"
+    />
+    <label
+      htmlFor="alphabetic"
+    >
+      Alphabetically
+    </label>
+    <input
+      checked={true}
+      id="cronologic"
+      name="orderBy"
+      onChange={[Function]}
+      type="radio"
+      value="cronologic"
+    />
+    <label
+      htmlFor="cronologic"
+    >
+      Cronologically
+    </label>
+    <button
+      className="btn"
+      onClick={[Function]}
+    >
+      <i
+        className="fa fa-sort-amount-down-alt"
+        id="btn-sort-icon"
+      />
+    </button>
+  </div>
+  <div
+    className="journal__entry animate__animated animate__pulse"
+    onClick={[Function]}
+  >
+    <div
+      className="journal__entry-content"
+    >
+      <h5
+        className="journal__entry-title"
+      >
+        Test title One
+      </h5>
+      <p
+        className="journal__entry-description"
+      >
+        Lorem impsu
+      </p>
+    </div>
+    <label
+      className="journal__entry-date"
+    >
+      Thursday
+      <span
+        className="journal__entry-day"
+      >
+        3rd
+      </span>
+    </label>
+  </div>
+  <div
+    className="journal__entry animate__animated animate__pulse"
+    onClick={[Function]}
+  >
+    <div
+      className="journal__entry-content"
+    >
+      <h5
+        className="journal__entry-title"
+      >
+        Test title Two
+      </h5>
+      <p
+        className="journal__entry-description"
+      >
+        Lorem impsu
+      </p>
+    </div>
+    <label
+      className="journal__entry-date"
+    >
+      Thursday
+      <span
+        className="journal__entry-day"
+      >
+        3rd
+      </span>
+    </label>
+  </div>
+  <div
+    className="journal__entry animate__animated animate__pulse"
+    onClick={[Function]}
+  >
+    <div
+      className="journal__entry-content"
+    >
+      <h5
+        className="journal__entry-title"
+      >
+        Test title Three
+      </h5>
+      <p
+        className="journal__entry-description"
+      >
+        Lorem impsu
+      </p>
+    </div>
+    <label
+      className="journal__entry-date"
+    >
+      Thursday
+      <span
+        className="journal__entry-day"
+      >
+        3rd
+      </span>
+    </label>
+  </div>
+  <div
+    className="journal__entry animate__animated animate__pulse"
+    onClick={[Function]}
+  >
+    <div
+      className="journal__entry-content"
+    >
+      <h5
+        className="journal__entry-title"
+      >
+        Test title Four
+      </h5>
+      <p
+        className="journal__entry-description"
+      >
+        Lorem impsu
+      </p>
+    </div>
+    <label
+      className="journal__entry-date"
+    >
+      Thursday
+      <span
+        className="journal__entry-day"
+      >
+        3rd
+      </span>
+    </label>
+  </div>
+</div>
+`;

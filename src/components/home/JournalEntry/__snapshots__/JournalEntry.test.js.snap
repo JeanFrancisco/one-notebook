@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas al componente <JournalEntry/>.jsx Debe hacer match con el snapshot capturado por defecto 1`] = `
+<div
+  className="journal__entry animate__animated animate__pulse"
+  onClick={[Function]}
+>
+  <div
+    className="journal__entry-image animate__animated animate__fadeIn animate__slow"
+    style={
+      Object {
+        "backgroundImage": "url(https://example.org/path/to/resources/test_image.png)",
+      }
+    }
+  />
+  <div
+    className="journal__entry-content"
+  >
+    <h5
+      className="journal__entry-title"
+    >
+      An Awesome Title For Testing
+    </h5>
+    <p
+      className="journal__entry-description"
+    >
+      Lorem impsu a dolor graiem
+    </p>
+  </div>
+  <label
+    className="journal__entry-date"
+  >
+    Wednesday
+    <span
+      className="journal__entry-day"
+    >
+      31st
+    </span>
+  </label>
+</div>
+`;

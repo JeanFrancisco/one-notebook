@@ -1,0 +1,12 @@
+.loading__container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+
+    span > span {
+        /*@ Overrides the color={ 'value' } property
+            in the 'react-spinners' components */
+        background-color: $dark-secondary;
+    }
+}
