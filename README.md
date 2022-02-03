@@ -1,3 +1,24 @@
+# Description
+
+This project is a simple web application to save quick notes.
+In that, We using the following tecnologies:
+
+- React JS
+
+- React-Router-Dom
+
+- Redux
+
+- Redux-Thunk
+
+- Firebase Authentication & Cloud Firestore
+
+- SaSS
+
+- Jest
+
+- Enzyme
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
