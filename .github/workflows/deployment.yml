@@ -14,8 +14,7 @@ on:
   workflow_dispatch:
 
 env:
-  # For testing reasons only.
-  CI: false
+  CI: ${{ secrets.IS_ENVIRONMENT_CI }}
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
