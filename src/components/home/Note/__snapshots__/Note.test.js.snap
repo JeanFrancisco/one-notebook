@@ -10,7 +10,7 @@ exports[`Pruebas al componente de <Note />.jsx Debe hacer match con el snapshot 
     <span
       className="note__appbar-date"
     >
-      28 de agosto de 2020
+      31 de diciembre de 1969 18:00PM
     </span>
     <input
       id="selector__file-photo"

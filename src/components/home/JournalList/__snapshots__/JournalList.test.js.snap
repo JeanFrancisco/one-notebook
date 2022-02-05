@@ -120,11 +120,11 @@ exports[`Pruebas al componente de <JournalList/>.jsx Debe hacer match con el sna
     <label
       className="journal__entry-date"
     >
-      Thursday
+      sábado
       <span
         className="journal__entry-day"
       >
-        3rd
+        5
       </span>
     </label>
   </div>
@@ -149,11 +149,11 @@ exports[`Pruebas al componente de <JournalList/>.jsx Debe hacer match con el sna
     <label
       className="journal__entry-date"
     >
-      Thursday
+      sábado
       <span
         className="journal__entry-day"
       >
-        3rd
+        5
       </span>
     </label>
   </div>
@@ -178,11 +178,11 @@ exports[`Pruebas al componente de <JournalList/>.jsx Debe hacer match con el sna
     <label
       className="journal__entry-date"
     >
-      Thursday
+      sábado
       <span
         className="journal__entry-day"
       >
-        3rd
+        5
       </span>
     </label>
   </div>
@@ -207,11 +207,11 @@ exports[`Pruebas al componente de <JournalList/>.jsx Debe hacer match con el sna
     <label
       className="journal__entry-date"
     >
-      Thursday
+      sábado
       <span
         className="journal__entry-day"
       >
-        3rd
+        5
       </span>
     </label>
   </div>
@@ -287,11 +287,11 @@ exports[`Pruebas al componente de <JournalList/>.jsx Debe renderizar tantos comp
     <label
       className="journal__entry-date"
     >
-      Thursday
+      sábado
       <span
         className="journal__entry-day"
       >
-        3rd
+        5
       </span>
     </label>
   </div>
@@ -316,11 +316,11 @@ exports[`Pruebas al componente de <JournalList/>.jsx Debe renderizar tantos comp
     <label
       className="journal__entry-date"
     >
-      Thursday
+      sábado
       <span
         className="journal__entry-day"
       >
-        3rd
+        5
       </span>
     </label>
   </div>
@@ -345,11 +345,11 @@ exports[`Pruebas al componente de <JournalList/>.jsx Debe renderizar tantos comp
     <label
       className="journal__entry-date"
     >
-      Thursday
+      sábado
       <span
         className="journal__entry-day"
       >
-        3rd
+        5
       </span>
     </label>
   </div>
@@ -374,11 +374,11 @@ exports[`Pruebas al componente de <JournalList/>.jsx Debe renderizar tantos comp
     <label
       className="journal__entry-date"
     >
-      Thursday
+      sábado
       <span
         className="journal__entry-day"
       >
-        3rd
+        5
       </span>
     </label>
   </div>

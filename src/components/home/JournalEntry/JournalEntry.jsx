@@ -1,11 +1,11 @@
 import { useDispatch } from 'react-redux';
-import moment from 'moment';
+import localMoment from '../../../config/moment';
 import { actionSetActiveNote } from '../../../redux/actions/notes';
 
 const JournalEntry = ({ entry }) => {
     const { urlImage, title, body, createdAt } = entry;
 
-    const momentCreatedDate = moment(createdAt);
+    const momentCreatedDate = localMoment(createdAt);
     const dispatch = useDispatch();
 
     const handleEntryClick = () => {
@@ -33,7 +33,7 @@ const JournalEntry = ({ entry }) => {
         <label className="journal__entry-date">
             { momentCreatedDate.format('dddd') }
             <span className="journal__entry-day">
-                { momentCreatedDate.format('Do') }
+                { momentCreatedDate.format('D') }
             </span>
         </label>
     </div>

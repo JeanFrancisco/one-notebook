@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { shallow } from 'enzyme';
 import { actionSavingChanges, actionStartUploadFile } from '../../../redux/actions/notes';
 import NoteAppBar from './NoteAppBar';
@@ -9,6 +10,7 @@ const mockDispatch = jest.fn();
 
 jest.mock('react-redux', () => ({
     useDispatch: jest.fn( () => mockDispatch ),
+    useSelector: jest.fn( callback => { return callback({ notes: { active: { createdAt: new Date().getTime() } } }) } ),
 }));
 
 jest.mock('../../../redux/actions/notes', () => ({
@@ -21,7 +23,7 @@ describe('Pruebas al componente de <NoteAppBar/>.jsx', () => {
     const wrapper = shallow(<NoteAppBar />);
 
     beforeEach(() => {
-        jest.clearAllMocks();
+        jest.resetAllMocks();
     });
 
     test('Debe hacer el match con el snapshot capturado por defecto', () => {

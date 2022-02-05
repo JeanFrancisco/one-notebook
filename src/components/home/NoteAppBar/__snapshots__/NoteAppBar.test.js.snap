@@ -7,7 +7,7 @@ exports[`Pruebas al componente de <NoteAppBar/>.jsx Debe hacer el match con el s
   <span
     className="note__appbar-date"
   >
-    28 de agosto de 2020
+    5 de febrero de 2022 13:47PM
   </span>
   <input
     id="selector__file-photo"

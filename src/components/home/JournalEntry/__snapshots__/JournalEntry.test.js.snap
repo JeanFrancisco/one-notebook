@@ -30,11 +30,11 @@ exports[`Pruebas al componente <JournalEntry/>.jsx Debe hacer match con el snaps
   <label
     className="journal__entry-date"
   >
-    Wednesday
+    miércoles
     <span
       className="journal__entry-day"
     >
-      31st
+      31
     </span>
   </label>
 </div>

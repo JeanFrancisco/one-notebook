@@ -1,9 +1,12 @@
 import { useRef } from 'react';
+import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
+import localMoment from '../../../config/moment';
 import { actionSavingChanges, actionStartUploadFile } from '../../../redux/actions/notes';
 
 const NoteAppBar = () => {
     const dispatch = useDispatch();
+    const activeNote = useSelector( store => store.notes.active );
 
     const inputFile = useRef();
 
@@ -23,7 +26,7 @@ const NoteAppBar = () => {
     }
 
     return <div className="note__appbar">
-        <span className="note__appbar-date">28 de agosto de 2020</span>
+        <span className="note__appbar-date">{ localMoment(activeNote?.createdAt).format('LLLA') }</span>
         <input id="selector__file-photo"
             type='file'
             style={{ display: 'none' }}
