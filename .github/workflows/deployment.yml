@@ -1,25 +1,21 @@
-# This is a basic workflow to help you get started with Actions
-
-name: Setting Up Enviroment Vars for GitHub Pages & Grant Access to Firebase Configuration.
-
-# Controls when the workflow will run
-# cuando alguien sube información a una rama que sea la fuente de publicación de GitHub Pages
+name: Setup, Build & Deploy React App Project to GitHub Pages
 on:
-  page_build
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+  push:
+    branches:
+      - main
 jobs:
-  # This workflow contains a single job called "build"
-  setup_environment:
-    # The type of runner that the job will run on
+  deployment:
+    concurrency: ${{ github.workflow }}-${{ github.ref }}
     runs-on: ubuntu-latest
     environment: github-pages
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world! ${{ env.REACT_APP_FIREBASE_APIKEY }} Setting up Enviroment Configuration.
+      - name: Checkout ✋ 👮 ✅
+        uses: actions/checkout@v2
+
+      - name: Install 💿 and Build 🔧 🧱 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: |
+          npm ci
+          npm run build
         env:
           REACT_APP_FIREBASE_APP: ${{ secrets.REACT_APP_FIREBASE_APP }}
           REACT_APP_FIREBASE_AUTH: ${{ secrets.REACT_APP_FIREBASE_AUTH }}
@@ -27,3 +23,14 @@ jobs:
           REACT_APP_FIREBASE_PROJECT: ${{ secrets.REACT_APP_FIREBASE_PROJECT }}
           REACT_APP_FIREBASE_STORAGE: ${{ secrets.REACT_APP_FIREBASE_STORAGE }}
           REACT_APP_FIREBASE_MESSAGING: ${{ secrets.REACT_APP_FIREBASE_MESSAGING }}
+
+      - name: Replace paths 📂 for generated files.
+        run: |
+          sed -i 's/="\//=".\//gi' build/input.html
+          cat build/input.html
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.2.3
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
