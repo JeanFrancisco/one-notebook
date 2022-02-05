@@ -26,8 +26,10 @@ jobs:
 
       - name: Replace paths 📂 for generated files.
         run: |
+          echo $PATH
           sed -i 's/="\//=".\//gi' ${{ github.workspace }}/build/input.html
           cat ${{ github.workspace }}/build/input.html
+        shell: bash
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.3
