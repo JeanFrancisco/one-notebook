@@ -26,10 +26,11 @@ jobs:
 
       - name: Replace paths 📂 for generated files.
         run: |
-          ls
           ls build
           # sed -i 's/="\//=".\//gi' ${{ github.workspace }}/build/input.html
-          cat ${{ github.workspace }}/build/input.html
+          cat build/input.html
+          cd build/
+          ls
         shell: bash
 
       - name: Deploy 🚀
