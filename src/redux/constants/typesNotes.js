@@ -7,7 +7,7 @@ export const NOTES_CLEANING_WHEN_LOGOUT = '[NOTES] CLEANING_WHEN_LOGOUT';
 
 export const NOTES_CHANGE_ORDER = '[NOTES] CHANGE_ORDER';
 
-export default {
+const TYPES_NOTES = {
     NOTES_NEW_NOTE,
     NOTES_DROP_NOTE,
     NOTES_SET_ACTIVE,
@@ -15,4 +15,6 @@ export default {
     NOTES_DISPLAY_IN_SIDEBAR,
     NOTES_CLEANING_WHEN_LOGOUT,
     NOTES_CHANGE_ORDER,
-}
+};
+
+export default TYPES_NOTES;

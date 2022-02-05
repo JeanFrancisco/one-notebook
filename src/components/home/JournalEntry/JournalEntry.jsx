@@ -3,7 +3,7 @@ import moment from 'moment';
 import { actionSetActiveNote } from '../../../redux/actions/notes';
 
 const JournalEntry = ({ entry }) => {
-    const { id, urlImage, title, body, createdAt } = entry;
+    const { urlImage, title, body, createdAt } = entry;
 
     const momentCreatedDate = moment(createdAt);
     const dispatch = useDispatch();

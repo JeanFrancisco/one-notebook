@@ -1,5 +1,5 @@
 import Swal from 'sweetalert2';
-import { addDoc, collection, deleteDoc, doc, getDocs, orderBy, updateDoc } from '@firebase/firestore';
+import { addDoc, collection, deleteDoc, doc, getDocs, updateDoc } from '@firebase/firestore';
 import {
     NOTES_NEW_NOTE,
     NOTES_SET_ACTIVE,
@@ -148,7 +148,7 @@ export const actionStartDeletingNote = (note_id) => {
         const user_uid = getState().auth.uid;
 
         try {
-            const resp = await deleteDoc( doc( firestoreDB, `${user_uid}/journal/notes/${note_id}`) );
+            /* const resp = */ await deleteDoc( doc( firestoreDB, `${user_uid}/journal/notes/${note_id}`) );
 
             dispatch( deleteNote( note_id ) );
 

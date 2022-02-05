@@ -34,7 +34,7 @@ const Note = ({ contentNote: thisNote }) => {
             initialNoteID.current = thisNote.id;
         }
 
-    }, [thisNote]);
+    }, [thisNote, resetForm]);
 
     // El useRef() + useEffect() anteriores, cumplen la misma función que el siguiente IF:
     // if(thisNote.id !== formNotes.id ) {
