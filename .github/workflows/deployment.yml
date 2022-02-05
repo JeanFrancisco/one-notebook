@@ -1,0 +1,36 @@
+name: Setup, Build & Deploy React App Project to GitHub Pages
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deployment:
+    concurrency: ${{ github.workflow }}-${{ github.ref }}
+    runs-on: ubuntu-latest
+    environment: github-pages
+    steps:
+      - name: Checkout ✋ 👮 ✅
+        uses: actions/checkout@v2
+
+      - name: Install 💿 and Build 🔧 🧱 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: |
+          npm ci
+          npm run build
+        env:
+          REACT_APP_FIREBASE_APP: ${{ secrets.REACT_APP_FIREBASE_APP }}
+          REACT_APP_FIREBASE_AUTH: ${{ secrets.REACT_APP_FIREBASE_AUTH }}
+          REACT_APP_FIREBASE_APIKEY: ${{ secrets.REACT_APP_FIREBASE_APIKEY }}
+          REACT_APP_FIREBASE_PROJECT: ${{ secrets.REACT_APP_FIREBASE_PROJECT }}
+          REACT_APP_FIREBASE_STORAGE: ${{ secrets.REACT_APP_FIREBASE_STORAGE }}
+          REACT_APP_FIREBASE_MESSAGING: ${{ secrets.REACT_APP_FIREBASE_MESSAGING }}
+
+      - name: Replace paths 📂 for generated files.
+        run: |
+          sed -i 's/="\//=".\//gi' build/input.html
+          cat build/input.html
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.2.3
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
