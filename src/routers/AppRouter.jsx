@@ -75,7 +75,7 @@ const AppRouter = () => {
     }
 
     return (
-        <Router>
+        <Router basename="/one-notebook">
             <Switch>
                 <PrivateRoute exact path="/" isAuthenticated={ isAuthenticated } redirectPath='/auth/login' component={ Home } />
                 <PublicBlockedRoute path="/auth" isAuthenticated={ isAuthenticated } redirectPath='/' component={ AuthRouter } />
