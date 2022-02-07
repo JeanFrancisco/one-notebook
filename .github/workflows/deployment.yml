@@ -24,13 +24,6 @@ jobs:
           REACT_APP_FIREBASE_STORAGE: ${{ secrets.REACT_APP_FIREBASE_STORAGE }}
           REACT_APP_FIREBASE_MESSAGING: ${{ secrets.REACT_APP_FIREBASE_MESSAGING }}
 
-      - name: Replace paths 📂 for generated files.
-        run: |
-          sed -i 's/="\//=".\//gi' ${{ github.workspace }}/build/index.html
-          cat build/index.html
-
-        shell: bash
-
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.3
         with:
