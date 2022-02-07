@@ -4,13 +4,7 @@ As you can see in the preview image below. This project consists of a simple not
 
 ![Image page preview](./Preview.png)
 
-You also, can see a demo of this project hosted here on :rocket: :four_leaf_clover: : **_GitHub Pages_** :eyes:
-
-___
-
-> Due GitHub Pages does not have a dedicated hosting space to store media files likes images, audios, videos, etc. Attemps to store files by the app could produce unexpected errors. I'm aware of that and will eventually move this to another service.
-
-> In the meantime, you are free to clone or fork this repository and run the application in a local environment to test its usefulness.
+You also, can see a demo of this project hosted here on :rocket: :four_leaf_clover: **_[GitHub Pages](https://jeanfrancisco.github.io/one-notebook)_** :eye: :eye:
 
 # Description
 
